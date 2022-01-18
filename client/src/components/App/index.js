@@ -10,7 +10,7 @@ function App() {
   const [idE, setIdE] = useState(1);
   // const [idQ, setIdQ] = useState(1);
   // const [idR, setIdR] = useState(1);
-  const URL = "https://localhost:3001";
+  const URL = "http://localhost:3001";
   useEffect(() => {
     fetch(`${URL}/energisers/1`)
       .then((res) => res.json())
