@@ -36,7 +36,7 @@ export async function getQuoteByID(id) {
 
 // GET REMINDER BY ID
 export async function getReminderByID(id) {
-  const data = await query(`SELECT * FROM energisers WHERE id = $1;`, [id]);
+  const data = await query(`SELECT * FROM reminders WHERE id = $1;`, [id]);
   return data.rows;
 }
 
