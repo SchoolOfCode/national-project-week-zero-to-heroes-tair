@@ -8,6 +8,6 @@ export const energisers = [
   },
 ];
 
-export const reminders = [{ id: 1, text: "drink water" }];
+export const reminders = [{ id: 1, text: "drink duff" }];
 
 export const quotes = [{ id: 1, quotation: "blablabla" }];
