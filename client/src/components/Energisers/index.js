@@ -26,7 +26,9 @@ function Energisers({ id }) {
   return (
     <div>
       <p>Your energiser for today is {energiser.energiser}</p>
-      <p>{energiser.url}</p>
+      <a href={energiser.url} target="_blank" rel="noreferrer">
+        Take me there!
+      </a>
     </div>
   );
 }

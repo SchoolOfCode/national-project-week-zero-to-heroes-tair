@@ -20,7 +20,9 @@ function App() {
 
   function handleClick() {
     const number = Math.ceil(Math.random() * 3);
-    setId(number);
+    if (number !== id) {
+      setId(number);
+    }
   }
 
   // async function fetchData(idE) {
