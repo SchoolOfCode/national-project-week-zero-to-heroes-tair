@@ -5,13 +5,13 @@
     align-content: center;
     position: absolute;
     left: 1200px;
-    bottom: 55px;
+    bottom: 40px;
 }
 
 #quotesText {
     position: absolute;
     left: 1500px;
-    top: 50px;
+    top: 20px;
     font-family: 'Athelas', 'Arial Narrow Bold';
     display: flex;
     font-size: 30px;
