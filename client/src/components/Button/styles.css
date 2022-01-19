@@ -1,7 +1,11 @@
 #button1{
 /* border: 5px solid gold; */
 height: auto;
-width: 200px;
+width: 300px;
+position: absolute;
+left: 800px;
+top: 350px;
+background: transparent;
 }
 
 /* #button1 button{

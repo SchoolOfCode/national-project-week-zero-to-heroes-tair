@@ -28,7 +28,7 @@ function App() {
       <Title> </Title>
       <Button  text="Zen-Time" onClick={zenButton}></Button>
       <Energisers text="Energise!"> </Energisers>
-      <Quotes text="Your daily good vibes"></Quotes>
+      <Quotes text="Your daily good vibes!"></Quotes>
       <Reminders text="Remember!"></Reminders>
     </div>
   );

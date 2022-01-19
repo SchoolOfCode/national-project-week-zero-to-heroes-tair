@@ -1,6 +1,27 @@
+/* The below is for just image */
+
 #energiser1 img{
-    width: 400px;
-    height: 400px;
+    width: 900px;
+    height: 700px;
     object-fit: contain;
-    
+    position: absolute; 
+    left: 500px;    
+    bottom: -80px;
 }
+
+#energiserText{
+    position: absolute;
+    left: 900px;
+    top: 600px;
+    font-family: 'Athelas', 'Arial Narrow Bold';
+    display: flex;
+    font-size: 30px;
+}
+/* #energiser1{
+    width: 700px;
+    height: 700px;
+    object-fit: contain;
+    position: absolute; 
+    left: 300px;    
+    bottom: -50px;
+} */

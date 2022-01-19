@@ -1,7 +1,18 @@
 #quotes1 img{
-    width: 400px;
-    height: 400px;
+    width: 800px;
+    height: 800px;
     object-fit: contain;
     align-content: center;
-    right: 200px;
+    position: absolute;
+    left: 1250px;
+    bottom: 100px;
+}
+
+#quotesText {
+    position: absolute;
+    left: 1500px;
+    top: 710px;
+    font-family: 'Athelas', 'Arial Narrow Bold';
+    display: flex;
+    font-size: 30px;
 }
