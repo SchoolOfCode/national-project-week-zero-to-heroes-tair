@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
-//import Button from "../Button";
+import buttonImage from "./Button.png"
 import Energisers from "../Energisers";
 import Quotes from "../Quotes";
 import Reminders from "../Reminders";
@@ -66,17 +66,17 @@ function App() {
     <div>
 
       <Title> </Title>
-      <Button  text="Zen-Time" onClick={zenButton}></Button>
-      <Energisers text="Energise!"> </Energisers>
-      <Quotes text="Your daily good vibes!"></Quotes>
-      <Reminders text="Remember!"></Reminders>
+      <div id="button1"> <button onClick={handleClick}><img src={buttonImage} alt="title"/></button></div>
+      <Energisers text="Energise!" id={id}></Energisers>
+      <Quotes text="Your daily good vibes!" id={id}></Quotes>
+      <Reminders text="Remember!" id={id}></Reminders>
 
-      <button onClick={handleClick} text="Zen-Time">
+      {/* <button onClick={handleClick} text="Zen-Time">
         Click
       </button>
       <Energisers id={id}></Energisers>
       <Quotes id={id}></Quotes>
-      <Reminders id={id}></Reminders>
+      <Reminders id={id}></Reminders> */}
     </div>
   );
 }

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import motivationImage from "./Motivation.png"
 
 
-function Quotes({ id, text }) {
+function Quotes({ id }) {
   const [quote, setQuote] = useState("");
   const URL = "http://localhost:3001/quotes";
 
@@ -22,8 +22,8 @@ function Quotes({ id, text }) {
     fetchQuote();
   }, [id]);
   
-return <div id="quotes1"><img src={motivationImage} alt="title"/><p id="quotesText">{text}</p></div>;
-  return <div>{quote.quote}</div>;
+return <div id="quotes1"><img src={motivationImage} alt="title"/><p id="quotesText">{quote.quote}</p></div>;
+  // return <div>{quote.quote}</div>;
 }
 
 export default Quotes;

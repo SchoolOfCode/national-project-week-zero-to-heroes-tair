@@ -1,11 +1,10 @@
 import "./styles.css";
 import React from "react";
-
 import energiserImage from "./Energiser.png"
 import { useState, useEffect } from "react";
 
 
-function Energisers({ id, text }) {
+function Energisers({ id }) {
   const [energiser, setEnergiser] = useState("");
   const URL = "http://localhost:3001/energisers";
 
@@ -26,15 +25,18 @@ function Energisers({ id, text }) {
   }, [id]);
 
   // return <div>{text}</div>;
-  return <div id="energiser1"><img src={energiserImage} alt="title"/><p id="energiserText">{text}</p></div>;
-  return (
-    <div>
-      <p>Your energiser for today is {energiser.energiser}</p>
-      <a href={energiser.url} target="_blank" rel="noreferrer">
-        Take me there!
-      </a>
-    </div>
-  );
+  return <div id="energiser1"><img src={energiserImage} alt="title"/><p id="energiserText">Your energiser for today is {energiser.energiser}</p><a href={energiser.url} target="_blank" rel="noreferrer">
+  Take me there!
+</a>
+</div>;
+  // // return (
+  // //   <div>
+  //     {/* <p>Your energiser for today is {energiser.energiser}</p>
+  //     <a href={energiser.url} target="_blank" rel="noreferrer">
+  //       Take me there!
+  //     </a>
+  //   </div>
+  // ); */}
 
 }
 
