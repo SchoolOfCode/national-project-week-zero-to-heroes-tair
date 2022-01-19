@@ -1,0 +1,21 @@
+#quotes1 img{
+    width: 800px;
+    height: 800px;
+    object-fit: contain;
+    align-content: center;
+    position: absolute;
+    left: 1250px;
+    bottom: 100px;
+}
+
+#quotesText {
+    position: absolute;
+    left: 1500px;
+    top: 710px;
+    font-family: 'Athelas', 'Arial Narrow Bold';
+    display: flex;
+    font-size: 30px;
+    color:#97096F;
+    background: #3B7B84;
+    border-radius: 20px;
+}

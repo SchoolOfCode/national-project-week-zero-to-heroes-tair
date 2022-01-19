@@ -1,8 +1,10 @@
 import "./styles.css";
 import React from "react";
 import { useState, useEffect } from "react";
+import reminderImage from "./Reminder.png"
 
-export default function Reminders({ id }) {
+
+export default function Reminders({ id, text }) {
   const [reminder, setReminder] = useState("");
   const URL = "http://localhost:3001/reminders";
 
@@ -19,5 +21,6 @@ export default function Reminders({ id }) {
   useEffect(() => {
     fetchReminder();
   }, [id]);
+   return <div id="reminder1"><img src={reminderImage} alt="title"/><p id="reminderText">{text}</p></div>;
   return <div>Remember! {reminder.reminder}</div>;
 }

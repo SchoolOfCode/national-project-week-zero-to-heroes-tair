@@ -4,6 +4,9 @@ import React, { useState } from "react";
 import Energisers from "../Energisers";
 import Quotes from "../Quotes";
 import Reminders from "../Reminders";
+
+import Title from "../Title";
+
 function App() {
   const [id, setId] = useState();
   // const [idQ, setIdQ] = useState(1);
@@ -18,11 +21,13 @@ function App() {
   //     });
   // }, [idE]);
 
+    
   function handleClick() {
     const number = Math.ceil(Math.random() * 3);
     if (number !== id) {
       setId(number);
     }
+
   }
 
   // async function fetchData(idE) {
@@ -59,6 +64,13 @@ function App() {
   // });
   return (
     <div>
+
+      <Title> </Title>
+      <Button  text="Zen-Time" onClick={zenButton}></Button>
+      <Energisers text="Energise!"> </Energisers>
+      <Quotes text="Your daily good vibes!"></Quotes>
+      <Reminders text="Remember!"></Reminders>
+
       <button onClick={handleClick} text="Zen-Time">
         Click
       </button>
