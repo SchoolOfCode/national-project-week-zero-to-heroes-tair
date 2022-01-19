@@ -1,0 +1,25 @@
+#button1{
+/* border: 5px solid gold; */
+height: auto;
+width: 200px;
+}
+
+/* #button1 button{
+    height: auto;
+    width: 100%;
+    background:transparent;
+    padding: 0px;
+} */
+
+#button1 img{
+    height: auto;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    position: relative;
+    content: auto;
+    border-radius: 100px;
+    /* border: 5px solid red; */
+    display: block;
+}

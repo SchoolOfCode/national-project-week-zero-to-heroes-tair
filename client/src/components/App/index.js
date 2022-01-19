@@ -1,10 +1,11 @@
-
 import "./App.css";
 import React, { useState, useEffect } from "react";
 import Button from "../Button";
 import Energisers from "../Energisers";
 import Quotes from "../Quotes";
 import Reminders from "../Reminders";
+import Title from "../Title";
+
 
 function App() {
   const [data, setData] = React.useState(null);
@@ -20,12 +21,13 @@ function App() {
     const randomId = Math.floor(Math.random() * 10);
     setId(randomId);
     //write all 3 functions in here
-    // console.log(randomId);
+    console.log(randomId);
   }
   return (
     <div>
-      <Button onClick={zenButton} text="Zen-Time"></Button>
-      <Energisers text="Energise!"></Energisers>
+      <Title> </Title>
+      <Button  text="Zen-Time" onClick={zenButton}></Button>
+      <Energisers text="Energise!"> </Energisers>
       <Quotes text="Your daily good vibes"></Quotes>
       <Reminders text="Remember!"></Reminders>
     </div>
