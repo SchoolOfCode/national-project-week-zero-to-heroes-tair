@@ -1,11 +1,10 @@
 import "./App.css";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 //import Button from "../Button";
 import Energisers from "../Energisers";
 import Quotes from "../Quotes";
 import Reminders from "../Reminders";
 function App() {
-  const [data, setData] = useState(null);
   const [id, setId] = useState();
   // const [idQ, setIdQ] = useState(1);
   // const [idR, setIdR] = useState(1);
