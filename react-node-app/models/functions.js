@@ -42,7 +42,7 @@ export async function getReminderByID(id) {
 
 // GET ENERGISER BY CATEGORY
 export async function getEnergiserByCategory(category) {
-  const data = await query(`SELECT * energisers WHERE category = $1;`, [
+  const data = await query(`SELECT * FROM energisers WHERE category = $1;`, [
     category,
   ]);
   return data.rows;

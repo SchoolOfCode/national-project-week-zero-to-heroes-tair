@@ -11,9 +11,9 @@ async function populateEnergiserTable() {
   for (let i = 0; i < energisers.length; i++) {
     let { activity, category, url } = energisers[i];
 
-    //   energisers.map((item) => {
-    //     return ({ activity, category, url } = item);
-    //   });
+    // energisers.map((item) => {
+    //   return ({ activity, category, url } = item);
+    // });
     console.log("this is the data", activity, category, url);
     const res = await query(sqlStringEnergiser, [activity, category, url]);
     console.log(res);

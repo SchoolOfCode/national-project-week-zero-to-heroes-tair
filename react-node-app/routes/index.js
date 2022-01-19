@@ -21,6 +21,7 @@ router.get("/", function (req, res) {
 // GET ALL ENERGISERS OR SEARCH
 router.get("/energisers", async function (req, res) {
   const { activity, category, url } = req.query;
+
   if (category) {
     const searchResults = await getEnergiserByCategory(category);
     res.json({
