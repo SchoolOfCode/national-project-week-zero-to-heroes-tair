@@ -1,0 +1,11 @@
+#reminder1 img{
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    
+}
+
+/* #reminder1 img.resize {
+    width:100px; 
+    height: auto;
+} */

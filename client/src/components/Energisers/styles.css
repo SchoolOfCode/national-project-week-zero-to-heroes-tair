@@ -1,3 +1,6 @@
-#energiser1{
-    height: 10px;
+#energiser1 img{
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    
 }
