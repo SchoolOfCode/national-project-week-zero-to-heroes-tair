@@ -11,13 +11,13 @@
 
 #energiserText{
     position: absolute;
-    left: 870px;
-    top: 600px;
+    left: 650px;
+    top: 700px;
     font-family: 'Athelas', 'Arial Narrow Bold';
     display: flex;
     font-size: 30px;
-    background:#97096F;
-    color: #3B7B84;
+    background:#79a863;
+    color: white;
     border-radius: 20px;
 
 }

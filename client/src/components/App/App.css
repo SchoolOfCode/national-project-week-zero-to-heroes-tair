@@ -45,6 +45,7 @@
   left: 670px;
   top: 300px;
   background: transparent;
+  z-index: 1000;
   }
   
   #button1 button{

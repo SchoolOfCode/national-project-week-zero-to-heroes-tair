@@ -9,12 +9,12 @@
 
 #reminderText{
     position: absolute;
-    top: 700px;
+    top: 470px;
     left: 170px;
     font-family: 'Athelas', 'Arial Narrow Bold';
     font-size: 30px;
     display: flex;
-    color:#97096F;
-    background: #3B7B84;
+    color: white;
+    background: #97096F;
     border-radius: 20px;
 }

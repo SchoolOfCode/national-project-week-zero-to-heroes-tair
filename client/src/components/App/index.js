@@ -63,8 +63,9 @@ function App() {
   //   fetchData();
   // });
   return (
+    <main>
+    {/* <button onClick={handleClick}>pls click me</button> */}
     <div>
-
       <Title> </Title>
       <div id="button1"> <button onClick={handleClick}><img src={buttonImage} alt="title"/></button></div>
       <Energisers text="Energise!" id={id}></Energisers>
@@ -78,6 +79,7 @@ function App() {
       <Quotes id={id}></Quotes>
       <Reminders id={id}></Reminders> */}
     </div>
+    </main>
   );
 }
 export default App;
