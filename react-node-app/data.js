@@ -22,11 +22,13 @@ export const energisers = [
   },
 ];
 
+
 export const reminders = [
   { id: 1, reminder: "drink water" },
   { id: 2, reminder: "take a break from the screen" },
   { id: 3, reminder: "stretch your legs" },
 ];
+
 
 export const quotes = [
   { id: 1, quotation: "Only a mediocre person is always at their best" },
