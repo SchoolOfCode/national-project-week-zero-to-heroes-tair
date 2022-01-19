@@ -61,9 +61,9 @@ function App() {
       <button onClick={handleClick} text="Zen-Time">
         Click
       </button>
-      <Energisers id={id} text={data}></Energisers>
-      <Quotes id={id} text="Your daily good vibes"></Quotes>
-      <Reminders text="Remember!"></Reminders>
+      <Energisers id={id}></Energisers>
+      <Quotes id={id}></Quotes>
+      <Reminders id={id}></Reminders>
     </div>
   );
 }
