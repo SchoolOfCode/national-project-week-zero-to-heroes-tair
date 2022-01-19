@@ -6,18 +6,32 @@ import Quotes from "../Quotes";
 import Reminders from "../Reminders";
 
 function App() {
-  const [data, setData] = React.useState(null);
-  const [id, setId] = useState(1);
-
-  React.useEffect(() => {
-    fetch("/api")
+  const [data, setData] = useState(null);
+  const [idE, setIdE] = useState(1);
+  // const [idQ, setIdQ] = useState(1);
+  // const [idR, setIdR] = useState(1);
+  const URL = "http://localhost:3001";
+  
+  useEffect(() => {
+    fetch(`${URL}/energisers/1`)
       .then((res) => res.json())
       .then((data) => setData(data.message));
-  }, [id]);
-
+  }, [idE]);
   function zenButton(event) {
     const randomId = Math.floor(Math.random() * 10);
-    setId(randomId);
+    setIdE(randomId);
+
+    // useEffect(() => {
+    //   fetch({ URL })
+    //     .then((res) => res.json())
+    //     .then((data) => setData(data.message));
+    // }, [idQ]);
+    // useEffect(() => {
+    //   fetch({ URL })
+    //     .then((res) => res.json())
+    //     .then((data) => setData(data.message));
+    // }, [idR]);
+
     //write all 3 functions in here
     // console.log(randomId);
   }
