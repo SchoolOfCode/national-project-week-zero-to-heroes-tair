@@ -5,17 +5,21 @@
     height: 700px;
     object-fit: contain;
     position: absolute; 
-    left: 500px;    
+    left: 470px;    
     bottom: -80px;
 }
 
 #energiserText{
     position: absolute;
-    left: 900px;
+    left: 870px;
     top: 600px;
     font-family: 'Athelas', 'Arial Narrow Bold';
     display: flex;
     font-size: 30px;
+    background:#97096F;
+    color: #3B7B84;
+    border-radius: 20px;
+
 }
 /* #energiser1{
     width: 700px;

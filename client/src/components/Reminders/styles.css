@@ -14,4 +14,7 @@
     font-family: 'Athelas', 'Arial Narrow Bold';
     font-size: 30px;
     display: flex;
+    color:#97096F;
+    background: #3B7B84;
+    border-radius: 20px;
 }
