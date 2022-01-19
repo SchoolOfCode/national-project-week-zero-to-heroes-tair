@@ -1,8 +1,7 @@
 import "./styles.css";
 import React from "react";
 import { useState, useEffect } from "react";
-import motivationImage from "./Motivation.png"
-
+import motivationImage from "./Motivation.png";
 
 function Quotes({ id }) {
   const [quote, setQuote] = useState("");
@@ -21,8 +20,13 @@ function Quotes({ id }) {
   useEffect(() => {
     fetchQuote();
   }, [id]);
-  
-return <div id="quotes1"><img src={motivationImage} alt="title"/><p id="quotesText">{quote.quote}</p></div>;
+
+  return (
+    <div id="quotes1">
+      <p id="quotesText">{quote.quote}</p>
+      <img src={motivationImage} alt="title" />
+    </div>
+  );
   // return <div>{quote.quote}</div>;
 }
 
