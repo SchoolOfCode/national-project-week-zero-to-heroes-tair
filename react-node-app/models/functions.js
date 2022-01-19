@@ -51,7 +51,7 @@ export async function getEnergiserByCategory(category) {
 // ADD NEW ENERGISER
 export async function addNewEnergiser(activity, category, url) {
   const data = await query(
-    `INSERT INTO energiser (activity, category, url) VALUES ($1, $2, $3);`,
+    `INSERT INTO energisers (activity, category, url) VALUES ($1, $2, $3);`,
     [activity, category, url]
   );
   return data.rows;

@@ -73,7 +73,7 @@ router.get("/reminders/:id", async function (req, res) {
 router.post("/energisers", async function ({ body }, res, next) {
   const { activity, category, url } = body;
   const newEnergiser = await addNewEnergiser(activity, category, url);
-  res.json({ success, true: payload, newEnergiser });
+  res.json({ success: true, payload: newEnergiser });
 });
 
 export default router;
