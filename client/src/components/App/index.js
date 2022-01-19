@@ -1,37 +1,83 @@
 import "./App.css";
-import React, { useState, useEffect } from "react";
-import Button from "../Button";
+import React, { useState } from "react";
+//import Button from "../Button";
 import Energisers from "../Energisers";
 import Quotes from "../Quotes";
 import Reminders from "../Reminders";
+
 import Title from "../Title";
 
-
 function App() {
-  const [data, setData] = React.useState(null);
-  const [id, setId] = useState(1);
+  const [id, setId] = useState();
+  // const [idQ, setIdQ] = useState(1);
+  // const [idR, setIdR] = useState(1);
+  // const URL = "http://localhost:3001";
+  // useEffect(() => {
+  //   fetch(`${URL}/energisers/${idE}`)
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       console.log(data);
+  //       setData(data.message);
+  //     });
+  // }, [idE]);
 
-  React.useEffect(() => {
-    fetch("/api")
-      .then((res) => res.json())
-      .then((data) => setData(data.message));
-  }, [id]);
+    
+  function handleClick() {
+    const number = Math.ceil(Math.random() * 3);
+    if (number !== id) {
+      setId(number);
+    }
 
-  function zenButton(event) {
-    const randomId = Math.floor(Math.random() * 10);
-    setId(randomId);
-    //write all 3 functions in here
-    console.log(randomId);
   }
+
+  // async function fetchData(idE) {
+  //   const response = await fetch(`${URL}/energisers/${idE}`);
+  //   const data = await response.json();
+  //   console.log(data);
+  // }
+  // function zenButton(event) {
+  //   const randomId = Math.ceil(Math.random() * 3);
+  //   console.log(randomId);
+  //   setIdE(randomId);
+  //   async function fetchData(id) {
+  //     const response = await fetch(`${URL}/energisers/${id}`);
+  //     const data = await response.json();
+  //     console.log(data);
+  //   }
+  //   fetchData(randomId);
+  // }
+  // useEffect(() => {
+  //   fetch({ URL })
+  //     .then((res) => res.json())
+  //     .then((data) => setData(data.message));
+  // }, [idQ]);
+  // useEffect(() => {
+  //   fetch({ URL })
+  //     .then((res) => res.json())
+  //     .then((data) => setData(data.message));
+  // }, [idR]);
+  //write all 3 functions in here
+  // console.log(randomId);
+
+  // useEffect(() => {
+  //   fetchData();
+  // });
   return (
     <div>
+
       <Title> </Title>
       <Button  text="Zen-Time" onClick={zenButton}></Button>
       <Energisers text="Energise!"> </Energisers>
       <Quotes text="Your daily good vibes!"></Quotes>
       <Reminders text="Remember!"></Reminders>
+
+      <button onClick={handleClick} text="Zen-Time">
+        Click
+      </button>
+      <Energisers id={id}></Energisers>
+      <Quotes id={id}></Quotes>
+      <Reminders id={id}></Reminders>
     </div>
   );
 }
-
 export default App;

@@ -6,7 +6,12 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server/index.js"
+    "start": "node -r dotenv/config server/index.js",
+    "dbcreatetable": "node -r dotenv/config ./db/scripts/createTables.js",
+    "dbpopulatetables": "node -r dotenv/config ./db/scripts/populateTables.js",
+    "dbpopulateenergisertable": "node -r dotenv/config ./db/scripts/populateEnergiserTable.js",
+    "dbpopulatequotetable": "node -r dotenv/config ./db.scripts/populateQuoteTable.js",
+    "dbpopulateremindertable": "node -r dotenv/config ./db.scripts/populateReminderTable.js"
   },
   "keywords": [],
   "author": "",
