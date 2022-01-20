@@ -20,19 +20,19 @@ router.get("/", function (req, res) {
 
 // GET ALL ENERGISERS OR SEARCH
 router.get("/energisers", async function (req, res) {
-  const { activity, category, url } = req.query;
+  // const { activity, category, url } = req.query;
 
-  if (category) {
-    const searchResults = await getEnergiserByCategory(category);
-    res.json({
-      success: true,
-      message: `Searched energisers by ${category}`,
-      payload: searchResults,
-    });
-    return;
-  }
-  const energisers = await getAllEnergisers();
-  res.json({ success: true, payload: energisers });
+  // if (category) {
+  //   const searchResults = await getEnergiserByCategory(category);
+  //   res.json({
+  //     success: true,
+  //     message: `Searched energisers by ${category}`,
+  //     payload: searchResults,
+  //   });
+  //   return;
+  //}
+  // const energisers = await getAllEnergisers();
+  res.json({ success: true, payload: "hello" });
 });
 
 // GET ENERGISER BY ID
