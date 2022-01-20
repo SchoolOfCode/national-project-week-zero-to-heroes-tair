@@ -46,6 +46,8 @@
   top: 300px;
   background: transparent;
   z-index: 1000;
+  display: flex;
+  align-content: center;
 }
 
 #button1 button {
