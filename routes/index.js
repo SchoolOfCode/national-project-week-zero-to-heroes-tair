@@ -15,7 +15,7 @@ import {
 
 // GET energisers listing
 router.get("/", function (req, res) {
-  res.send("respond with a resource");
+  res.send("respond with a Rob");
 });
 
 // GET ALL ENERGISERS OR SEARCH
