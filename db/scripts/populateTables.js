@@ -46,6 +46,6 @@ async function populateQuoteTable() {
   }
 }
 
-// populateEnergiserTable();
+populateEnergiserTable();
 // populateQuoteTable();
-populateReminderTable();
+// populateReminderTable();

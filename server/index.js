@@ -1,4 +1,5 @@
 import express from "express";
+import cors from "cors";
 
 import indexRouter from "../routes/index.js";
 
@@ -9,6 +10,8 @@ const app = express();
 //   req.set("Access-Control-Allow-Origin", "*");
 //   next();
 // });
+
+app.use(cors());
 
 // app.use(logger("dev"));
 app.use(express.json());
