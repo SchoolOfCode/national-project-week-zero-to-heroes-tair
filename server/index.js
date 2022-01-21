@@ -13,7 +13,10 @@ const app = express();
 
 app.use(
   cors({
-    origin: "*",
+    origin: [
+      "https://zen-ergise.netlify.app/",
+      "https://zen-ergise.herokuapp.com/",
+    ],
   })
 );
 
