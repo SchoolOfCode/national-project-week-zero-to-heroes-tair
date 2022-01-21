@@ -11,7 +11,11 @@ const app = express();
 //   next();
 // });
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 
 // app.use(logger("dev"));
 app.use(express.json());
