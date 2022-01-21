@@ -3,21 +3,21 @@ import { query } from "../db/index.js";
 
 // GET ALL ENERGISERS
 export async function getAllEnergisers() {
-  const data = await query(`Select * FROM energisers;`);
+  const data = await query(`SELECT * FROM energisers;`);
   console.log("energisers are", data);
   return data.rows;
 }
 
 // GET ALL QUOTES
 export async function getAllQuotes() {
-  const data = await query(`Select * FROM quotes;`);
+  const data = await query(`SELECT * FROM quotes;`);
   console.log("quotes are", data);
   return data.rows;
 }
 
 // GET ALL REMINDERS
 export async function getAllReminders() {
-  const data = await query(`Select * FROM reminders;`);
+  const data = await query(`SELECT * FROM reminders;`);
   console.log("reminders are", data);
   return data.rows;
 }
