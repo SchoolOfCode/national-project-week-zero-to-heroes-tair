@@ -65,9 +65,9 @@ export const energisers = [
   },
   {
     id: 10,
-    activity: "Play a game of Scattergories",
+    activity: "Play a game of Scrabble",
     category: "game",
-    url: "https://scattergoriesonline.net/",
+    url: "https://wordscramble.eu/scrabble-online.html",
     // favourite: false
   },
 ];
