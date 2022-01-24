@@ -16,7 +16,7 @@ const pool = new pg.Pool({
   database: dbname,
    password: password,
    port: port,
-  //connectionString: databaseURL,
+  connectionString: databaseURL,
   ssl: { rejectUnauthorized: false },
 });
 
