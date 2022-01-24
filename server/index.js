@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 
 app.use(function (req, res, next) {
-  res.set("Access-Control-Allow-Origin", "no-cors");
+  res.set("Access-Control-Allow-Origin", "*");
   next();
 });
 
