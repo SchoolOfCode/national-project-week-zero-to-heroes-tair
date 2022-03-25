@@ -7,19 +7,19 @@ const PORT = process.env.PORT || 3001;
 
 const app = express();
 
-app.use(function (req, res, next) {
-  res.set("Access-Control-Allow-Origin", "*");
-  next();
-});
+// app.use(function (req, res, next) {
+//   res.set("Access-Control-Allow-Origin", "*");
+//   next();
+// });
 
-// app.use(
-//   cors({
-//     origin: [
-//       "https://zen-ergise.netlify.app/",
-//       "https://zen-ergise.herokuapp.com/",
-//     ],
-//   })
-// );
+app.use(
+  cors({
+    origin: [
+      "https://zen-ergise.netlify.app/",
+      "https://zen-ergise.herokuapp.com/",
+    ],
+  })
+);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
