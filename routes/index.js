@@ -48,6 +48,7 @@ router.get("/energisers/:id", async function (req, res) {
 // GET ALL QUOTES
 router.get("/quotes", async function (req, res) {
   const quotes = await getAllQuotes();
+  
   res.json({ success: true, payload: quotes });
 });
 
@@ -55,6 +56,7 @@ router.get("/quotes", async function (req, res) {
 router.get("/quotes/:id", async function (req, res) {
   const quote = Number(req.params.id);
   const returnedQuote = await getQuoteByID(quote);
+  res.set("Access-Control-Allow-Origin", "*");
   res.json({ success: true, payload: returnedQuote });
 });
 
@@ -68,6 +70,7 @@ router.get("/reminders", async function (req, res) {
 router.get("/reminders/:id", async function (req, res) {
   const reminder = Number(req.params.id);
   const returnedReminder = await getReminderByID(reminder);
+  res.set("Access-Control-Allow-Origin", "*");
   res.json({ success: true, payload: returnedReminder });
 });
 
