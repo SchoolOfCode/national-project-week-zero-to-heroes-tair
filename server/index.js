@@ -12,14 +12,14 @@ app.use(function (req, res, next) {
   next();
 });
 
-// app.use(
-//   cors({
-//     origin: [
-//       "https://zen-ergise.netlify.app/",
-//       "https://zen-ergise.herokuapp.com/",
-//     ],
-//   })
-// );
+app.use(
+  cors({
+    origin: [
+      "https://zen-ergise.netlify.app/",
+      "https://zen-ergise.herokuapp.com/",
+    ],
+  })
+);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
