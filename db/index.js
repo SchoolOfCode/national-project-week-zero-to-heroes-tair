@@ -11,11 +11,11 @@ import {
 
 const pool = new pg.Pool({
  // data from heroku,
-  user: username,
- host: host,
-  database: dbname,
-   password: password,
-   port: port,
+//   user: username,
+//  host: host,
+//   database: dbname,
+//    password: password,
+//    port: port,
   connectionString: databaseURL,
   ssl: { rejectUnauthorized: false },
 });

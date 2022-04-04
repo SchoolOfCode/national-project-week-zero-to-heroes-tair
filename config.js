@@ -5,4 +5,4 @@ export const password = process.env.PGPASSWORD;
 export const port = process.env.PGPORT;
 export const databaseURL = process.env.DATABASE_URL;
 
-console.log(dbname);
+console.log(databaseURL);

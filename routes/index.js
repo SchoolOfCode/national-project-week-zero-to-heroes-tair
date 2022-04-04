@@ -13,6 +13,8 @@ import {
   addNewEnergiser,
 } from "../models/functions.js";
 
+
+
 // GET energisers listing
 router.get("/", function (req, res) {
   res.send("respond with a Rob");
@@ -39,6 +41,7 @@ router.get("/energisers", async function (req, res) {
 router.get("/energisers/:id", async function (req, res) {
   const energiser = Number(req.params.id);
   const returnedEnergiser = await getEnergiserByID(energiser);
+  res.set("Access-Control-Allow-Origin", "*")
   res.json({ success: true, payload: returnedEnergiser });
 });
 
