@@ -17,6 +17,7 @@ import {
 
 // GET energisers listing
 router.get("/", function (req, res) {
+  res.set("Access-Control-Allow-Origin", "*");
   res.send("respond with a Rob");
 });
 
@@ -34,6 +35,7 @@ router.get("/energisers", async function (req, res) {
     return;
   }
   const energisers = await getAllEnergisers();
+  res.set("Access-Control-Allow-Origin", "*")
   res.json({ success: true, payload: energisers });
 });
 
@@ -48,7 +50,7 @@ router.get("/energisers/:id", async function (req, res) {
 // GET ALL QUOTES
 router.get("/quotes", async function (req, res) {
   const quotes = await getAllQuotes();
-  
+  res.set("Access-Control-Allow-Origin", "*")
   res.json({ success: true, payload: quotes });
 });
 
@@ -63,6 +65,7 @@ router.get("/quotes/:id", async function (req, res) {
 // GET ALL REMINDERS
 router.get("/reminders", async function (req, res) {
   const reminders = await getAllReminders();
+  res.set("Access-Control-Allow-Origin", "*")
   res.json({ success: true, payload: reminders });
 });
 
